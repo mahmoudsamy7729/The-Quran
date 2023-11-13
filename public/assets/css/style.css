@@ -1,0 +1,187 @@
+:root {
+    --bg: white;
+    --font: #212529;
+    --nav: white;
+    --fdiv: #F2F2F2;
+    --button: white;
+}
+
+
+[data-theme="dark"]
+{
+    --bg: #1f2125;
+    --font: #e7e9ea;
+    --nav: #343a40;
+    --fdiv: #282b30;
+    --button: #343a40;
+
+}
+[data-theme="light"]
+{
+    --bg: white;
+    --font: #212529;
+    --nav: white;
+    --fdiv: #F2F2F2;
+    --button: white;
+}
+@font-face {
+    font-family:quran;
+    src: url("UthmanicHafs_V20.ttf") format("opentype");
+}
+@font-face {
+    font-family: surrahname;
+    src: url("surrahname.otf") format("opentype");
+  }
+  .btn:focus,.btn:active {
+    outline: none !important;
+    box-shadow: none;
+ }
+.sidebar
+{
+    direction: rtl;
+    position: fixed;
+    top:0;
+    right:-25rem;
+    height:100%;
+    width:25rem;
+    background-color: var(--nav);
+    z-index: 10000;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    transition: right 0.5s ease;
+}
+.sidebar-header
+{
+    display: inline-block;
+    flex-basis: 50%;
+}
+.theme
+{
+    flex-basis: calc(100% / 3);
+    color: var(--font);
+}
+.theme:hover
+{
+    color: var(--font);
+}
+.themes-div
+{
+    background-color: var(--fdiv);
+}
+body
+{
+    background-color: var(--bg);
+    color: var(--font);
+    transition: background 0.2s , color 0.2s ;
+}
+.shadow 
+{
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+}
+.quran
+{
+    font-family: quran;
+}
+.f-div
+{
+    background-color:var(--fdiv);
+    height:55vh;
+    padding-top:8rem;
+    clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+    transition: background 0.2s ;
+}
+.navbar
+{
+    background-color:  var(--nav);
+    transition: background 0.2s ;
+    
+}
+.navbar a
+{
+    color: var(--font); 
+    transition:  color 0.2s ;
+}
+.navbar a:hover
+{
+    color: var(--font); 
+    transition:  color 0.2s ;
+}
+.nav-button
+{
+    color: #aa9523 !important;
+    background:none !important;
+    border:none !important;
+}
+
+.surah-card
+{
+    transition: 0.2s ;
+}
+.surah-card:hover   
+{
+    border-color: black !important;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    
+}
+.surah-number-container
+{
+    margin: auto;
+    height: 3.5rem;
+    text-align:center;
+    padding-top: 0.9rem;
+    background-color: var(--fdiv);
+    transition: background 0.2s ;
+}
+.surah-number
+{
+    color: var(--font);
+    transition:  color 0.2s ;
+}
+.surah-name-ar
+{
+    color: var(--font) !important;
+    transition:  color 0.2s ;
+}
+.surah-name-en
+{
+    direction: ltr;
+    padding-top: 5px;
+    color: var(--font);
+    transition:  color 0.2s ;
+}
+.active-button
+{
+    background-color: var(--button) !important;
+    transition:  background 0.2s ;
+}
+.listen-surah:hover
+{
+    background-color: #F2F2F2;
+}
+.tra-div
+{
+    color: var(--font) !important;
+        transition:  color 0.2s ;
+    
+} 
+.next-surah
+{
+    background-color: var(--bg);
+    color: var(--font);
+    transition: background 0.2s , color 0.2s ;
+
+}
+.next-surah:hover
+{
+    color: var(--font);
+}
+.surah-info
+{
+    color: var(--font);
+    transition:  background 0.2s ;
+}
+@media (max-width: 576px) { 
+    .sidebar
+    {
+        width: 100%;
+    }
+ }
